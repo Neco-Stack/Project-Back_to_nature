@@ -1,3 +1,159 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "urbanist";
+  src: url(../fonts/Urbanist-Light.ttf);
+}
+@font-face {
+  font-family: "urbanist-medium";
+  src: url(../fonts/Urbanist-Medium.ttf);
+}
+@font-face {
+  font-family: "urbanist-light";
+  src: url(../fonts/Urbanist-Light.ttf);
+}
+@font-face {
+  font-family: "urbanist-bold";
+  src: url(../fonts/Urbanist-Bold.ttf);
+}
+@font-face {
+  font-family: "urbanist-extrabold";
+  src: url(../fonts/Urbanist-ExtraBold.ttf);
+}
+body {
+  font-family: "urbanist";
+}
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border: solid black 1px;
+  border-radius: 24px;
+  width: 80vw;
+  margin: auto;
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "urbanist-medium";
+}
+header nav a:first-of-type {
+  text-decoration: underline;
+  font-family: "urbanist-extrabold";
+}
+
+section:nth-of-type(1) {
+  background-image: url(../img/Ilustration_Header\ 1.png);
+  background-position: top;
+  background-repeat: no-repeat;
+}
+section:nth-of-type(1) .btn-wrapper {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+section:nth-of-type(1) .btn-wrapper .hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  border: black solid 1px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-family: "urbanist-bold";
+  color: black;
+  font-size: 1rem;
+}
+section:nth-of-type(1) h1 {
+  font-size: 6rem;
+  font-family: "urbanist-extrabold";
+  padding-top: 16rem;
+  padding-left: 11rem;
+}
+
+.btn:nth-of-type(3) {
+  background-color: #A9CBA6;
+}
+
+.main-section {
+  background-image: url(../img/background_bulb_grün.svg);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.main-section .main-section-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .main-section-cards .card {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  margin: auto;
+}
+
+.btn-campeer-finden {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.camper-buchen {
+  background-image: url(../img/background_bulb_blau.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.camper-cards {
+  display: flex;
+  justify-content: space-around;
+}
+.camper-cards .card {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  border-radius: 24px;
+}
+.camper-cards .card .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F0CEA0;
+}
+
+.info-list {
+  display: flex;
+  background-color: #F0CEA0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+}
+.footer .main-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer .main-footer a {
+  text-decoration: none;
+  font-family: "urbanist";
+  font-size: 0.9rem;
+  padding: 8px;
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
